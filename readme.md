@@ -90,6 +90,17 @@ All data used in the paper and to generate all figures are provided in
   heteromodal brain regions *significantly involved, leftward
   asymmetrical across 3 language contrasts* (listening to, reading, and
   producing sentences), and intrinsically connected.
+  - The *volumetric* (in the MNI ICBM 152 space) and *area* (32k_fs_LR
+    space) atlas is available in the `Atlas` folder. The sub-folder
+    `Volumetric` contains the volumetric SENSAAS atlas:
+    `SENSAAS_MNI_ICBM_152_2mm.nii`, and a CSV file containing a full
+    description of each language areas: `SENSAAS_description.csv`. The
+    sub-folder `Area` contains the area SENSAAS atlas in the left
+    (`S1200_binarySentCore_L_surface.shape.gii`) and right hemisphere
+    (`S1200_binarySentCore_R_surface.shape.gii`), as well as the hub
+    atlas (*i.e.* regions STS3, STS4 and F3t only) in the left
+    (`S1200_binaryHubsSentCore_L_surface.shape.gii`) and right
+    hemisphere (`S1200_binaryHubsSentCore_R_surface.shape.gii`).
 
 <p align="center">
 <img src="readme_files/sensaas.gif" width="50%" height="50%" />
