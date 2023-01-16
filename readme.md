@@ -89,6 +89,9 @@ have this, we are happy to share the processed data used here.
 All data computed in the paper and to generate figures are provided in
 `Data` folder.
 
+The file `Data\infos_995participants.csv` does not correspond to the HCP
+identifiers of each participant, but an exemple file to run the scripts.
+
 ------------------------------------------------------------------------
 
 ## Atlas used
@@ -121,12 +124,12 @@ folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
 <img src="readme_files/sensaas.gif" width="50%" height="50%" />
 </p>
 
-- **AICHA** is a functional brain ROIs atlas based on resting-state fMRI
-  data acquired in 281 individuals. AICHA ROIs cover the whole cerebrum,
-  each having 1) homogeneity of its constituting voxels intrinsic
-  activity, and 2) a unique homotopic contralateral counterpart with
-  which it has maximal intrinsic connectivity. Full description of the
-  atlas can be found there:
+- **AICHA** is a functional brain ROIs atlas (384 brain regions) based
+  on resting-state fMRI data acquired in 281 individuals. AICHA ROIs
+  cover the whole cerebrum, each having 1) homogeneity of its
+  constituting voxels intrinsic activity, and 2) a unique homotopic
+  contralateral counterpart with which it has maximal intrinsic
+  connectivity. Full description of the atlas can be found there:
   [AICHA](https://www.gin.cnrs.fr/en/tools/aicha/), and the related
   paper there: [Joliot, M., et
   al. 2015](https://doi.org/10.1016/j.jneumeth.2015.07.013).
