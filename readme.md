@@ -33,7 +33,7 @@ hemispheric specialization and global properties of cortical
 organization.
 
 <p align="center">
-<img src="Figures/gradient_effect.png" width="75%" height="75%" />
+<img src="readme_files/gradient_effect.png" width="75%" height="75%" />
 </p>
 
 ------------------------------------------------------------------------
@@ -63,7 +63,7 @@ have this, we are happy to share the processed data used here.
   al, 2020](https://doi.org/10.7554/eLife.58722)).
 
 <p align="center">
-<img src="Figures/method_summary.png" width="60%" height="60%" />
+<img src="readme_files/method_summary.png" width="60%" height="60%" />
 </p>
 
 - The second set of data used are the region-level functional
@@ -74,7 +74,7 @@ have this, we are happy to share the processed data used here.
   2016](https://doi.org/10.1073/pnas.1608282113)).
 
 <p align="center">
-<img src="Figures/gradients_summary.png" width="60%" height="60%" />
+<img src="readme_files/gradients_summary.png" width="60%" height="60%" />
 </p>
 
 All data used in the paper and to generate all figures are provided in
@@ -92,7 +92,7 @@ All data used in the paper and to generate all figures are provided in
   producing sentences), and intrinsically connected.
 
 <p align="center">
-<img src="Figures/sensaas.gif" width="50%" height="50%" />
+<img src="readme_files/sensaas.gif" width="50%" height="50%" />
 </p>
 
 - [AICHA](https://www.gin.cnrs.fr/en/tools/aicha/) is a functional brain
