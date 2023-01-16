@@ -93,8 +93,8 @@ All the data used are brain fMRI data from the Human Connectome Project
 </p>
 
 - [AICHA](https://doi.org/10.1016/j.jneumeth.2015.07.013) is an
-  **homotopic** a functional brain atlas optimized for the *study of
-  functional brain asymmetries*
+  **homotopic** brain atlas a functional brain atlas optimized for the
+  *study of functional brain asymmetries*
 
 ------------------------------------------------------------------------
 
