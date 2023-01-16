@@ -40,12 +40,21 @@ organization.
 
 ## Code release
 
-The `Script` folder contains 4 files:
+The `Script` folder contains 2 sub-folders: `Analysis` and
+`Visualization`.
 
 - `-.rtf`: README file containing information about -
+
 - `-`: —
+
 - `-`: —
-- **-**.
+
+- The `Visualization` folder contains `R` files
+  (`figures_script_FigX.R`) used to generate each figures included in
+  the paper. Each script corresponds to a figure or a panel. The brain
+  renderings in the paper require a customized version of [Surf
+  Ice](https://www.nitrc.org/projects/surfice/) that we will be happy to
+  share on demand.
 
 ------------------------------------------------------------------------
 
@@ -77,7 +86,7 @@ have this, we are happy to share the processed data used here.
 <img src="readme_files/gradients_summary.png" width="60%" height="60%" />
 </p>
 
-All data used in the paper and to generate all figures are provided in
+All data computed in the paper and to generate figures are provided in
 `Data` folder.
 
 ------------------------------------------------------------------------
@@ -108,8 +117,8 @@ All data used in the paper and to generate all figures are provided in
 
 - [AICHA](https://www.gin.cnrs.fr/en/tools/aicha/) is a functional brain
   ROIs atlas based on resting-state fMRI data acquired in 281
-  individuals. AICHA ROIs cover the whole cerebrum, each having 1-
-  homogeneity of its constituting voxels intrinsic activity, and 2- a
+  individuals. AICHA ROIs cover the whole cerebrum, each having 1)
+  homogeneity of its constituting voxels intrinsic activity, and 2) a
   unique homotopic contralateral counterpart with which it has maximal
   intrinsic connectivity.
 
