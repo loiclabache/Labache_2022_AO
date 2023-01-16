@@ -38,7 +38,7 @@ organization.
 
 ------------------------------------------------------------------------
 
-## Code release
+## Code release (*in progress*)
 
 The `Script` folder contains 2 sub-folders: `Analysis` and
 `Visualization`.
@@ -68,8 +68,8 @@ have this, we are happy to share the processed data used here.
   high-order language network (see
   [SENSAAS](https://github.com/loiclabache/SENSAAS_brainAtlas)). These 5
   features have been previously shown to accurately determine the
-  language network lateralization at the individual level ([Labache et
-  al, 2020](https://doi.org/10.7554/eLife.58722)).
+  language network lateralization at the individual level ([Labache, L.,
+  et al. 2020](https://doi.org/10.7554/eLife.58722)).
 
 <p align="center">
 <img src="readme_files/method_summary.png" width="60%" height="60%" />
@@ -79,8 +79,8 @@ have this, we are happy to share the processed data used here.
   connectivity matrices (384 × 384
   [AICHA](https://doi.org/10.1016/j.jneumeth.2015.07.013) brain
   regions). Those matrices have been used to compute the first 3
-  functional gradients ([Margulies et al,
-  2016](https://doi.org/10.1073/pnas.1608282113)).
+  functional gradients ([Margulies, D., et
+  al. 2016](https://doi.org/10.1073/pnas.1608282113)).
 
 <p align="center">
 <img src="readme_files/gradients_summary.png" width="60%" height="60%" />
@@ -93,15 +93,21 @@ All data computed in the paper and to generate figures are provided in
 
 ## Atlas used
 
-- [SENSAAS](https://github.com/loiclabache/SENSAAS_brainAtlas) is
-  composed of 18 regions of interest corresponding to the **core
-  language network**. The core language network corresponds to a set of
-  heteromodal brain regions *significantly involved, leftward
+The atlas used in te paper are available in the `Atlas` folder. This
+folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
+
+- **SENSAAS** is composed of 18 regions of interest corresponding to the
+  **core language network**. The core language network corresponds to a
+  set of heteromodal brain regions *significantly involved, leftward
   asymmetrical across 3 language contrasts* (listening to, reading, and
-  producing sentences), and intrinsically connected.
+  producing sentences), and intrinsically connected. Full description of
+  the language atlas can be found there:
+  [SENSAAS](https://github.com/loiclabache/SENSAAS_brainAtlas), and the
+  related paper there: [Labache, L., et
+  al. 2019](https://doi.org/10.1007/s00429-018-1810-2).
   - The *volumetric* (in the MNI ICBM 152 space) and *area* (32k_fs_LR
-    space) atlas is available in the `Atlas` folder. The sub-folder
-    `Volumetric` contains the volumetric SENSAAS atlas:
+    space) atlas are available in the `Atlas/SENSAAS` folder. The
+    sub-folder `Volumetric` contains the volumetric SENSAAS atlas:
     `SENSAAS_MNI_ICBM_152_2mm.nii`, and a CSV file containing a full
     description of each language areas: `SENSAAS_description.csv`. The
     sub-folder `Area` contains the area SENSAAS atlas in the left
@@ -115,12 +121,19 @@ All data computed in the paper and to generate figures are provided in
 <img src="readme_files/sensaas.gif" width="50%" height="50%" />
 </p>
 
-- [AICHA](https://www.gin.cnrs.fr/en/tools/aicha/) is a functional brain
-  ROIs atlas based on resting-state fMRI data acquired in 281
-  individuals. AICHA ROIs cover the whole cerebrum, each having 1)
-  homogeneity of its constituting voxels intrinsic activity, and 2) a
-  unique homotopic contralateral counterpart with which it has maximal
-  intrinsic connectivity.
+- **AICHA** is a functional brain ROIs atlas based on resting-state fMRI
+  data acquired in 281 individuals. AICHA ROIs cover the whole cerebrum,
+  each having 1) homogeneity of its constituting voxels intrinsic
+  activity, and 2) a unique homotopic contralateral counterpart with
+  which it has maximal intrinsic connectivity. Full description of the
+  atlas can be found there:
+  [AICHA](https://www.gin.cnrs.fr/en/tools/aicha/), and the related
+  paper there: [Joliot, M., et
+  al. 2015](https://doi.org/10.1016/j.jneumeth.2015.07.013).
+  - The version of AICHA used in the paper is available in the
+    `Atlas\AICHA` folder: `AICHA.nii` (MNI ICBM 152 space).
+    `AICHA_vol3.txt` is a description of each atlas’ regions.
+    `Readme_AICHA.pdf` is the user manual.
 
 ------------------------------------------------------------------------
 
