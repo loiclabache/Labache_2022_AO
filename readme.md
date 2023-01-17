@@ -65,17 +65,19 @@ compute language lateralization metrics and gradients, and analyze data.
 - `step_4_language_metrics_computation.R`: `R` script to compute the 5
   language lateralization metrics (data available in the `Data` folder:
   `995participants_language_metrics_HCP.csv`):
-  - average asymmetry of activation (left-right hemisphere) of the
+  - **average asymmetry of activation** (left-right hemisphere) of the
     story-math fMRI contrast at the **network** level,
-  - average asymmetry of activations (left-right hemisphere) of the
+  - **average asymmetry of activation** (left-right hemisphere) of the
     story-math fMRI contrast at the **hub** level,
-  - average strength sum (left+right hemisphere) during rs-fMRI of the
-    language network,
-  - average strength asymmetry (left-right hemisphere) during rs-fMRI of
+  - **average strength sum** (left+right hemisphere) during rs-fMRI of
     the language network,
-  - average inter-hemispheric homotopic connectivity strength during
+  - **average strength asymmetry** (left-right hemisphere) during
+    rs-fMRI of the language network,
+  - **average inter-hemispheric homotopic connectivity strength** during
     rs-fMRI of the language network.
-- `step_5_participants_classification.R`: …
+- `step_5_participants_classification.R`: `R` script to classify the 995
+  participants. Each participant is characterized by the 5 language
+  lateralization metrics.
 
 The `Visualization` folder contains `R` files (`figures_script_FigX.R`)
 used to generate each figures included in the paper. Each script
