@@ -48,12 +48,34 @@ language task fMRI data (from the Amazon Web Services: AWS, S3 bucket),
 compute language lateralization metrics and gradients, and analyze data.
 
 - `step_1_download_rest_fMRI_HCP_data.R`: `R` script to download
-  resting-state data for chosen participants,
+  resting-state data for chosen participants. Requires to create AWS
+  credentials through the
+  [ConnectomeDB](https://wiki.humanconnectome.org/display/PublicData/How+To+Connect+to+Connectome+Data+via+AWS)
+  website.
 - `step_2_download_task_fMRI_HCP_data.R`: `R` script to download
   language task data for chosen participants (*aka* files named
-  *LANGUAGE_level2_hp200_s4.dscalar.nii* on HCP server),
-- `step_3_language_metrics_computation.R`: …
-- `-`: …
+  *LANGUAGE_level2_hp200_s4.dscalar.nii* on HCP server). Requires to
+  create AWS credentials through the
+  [ConnectomeDB](https://wiki.humanconnectome.org/display/PublicData/How+To+Connect+to+Connectome+Data+via+AWS)
+  website.
+- `step_3_splitting_areal_tfMRI.sh`: `shell` script to split the fMRI
+  activations of the language task between the left and right
+  hemispheres. Requires
+  [`Connectome Workbench`](https://www.humanconnectome.org/software/connectome-workbench).
+- `step_4_language_metrics_computation.R`: `R` script to compute the 5
+  language lateralization metrics (data available in the `Data` folder:
+  `995participants_language_metrics_HCP.csv`):
+  - average asymmetry of activation (left-right hemisphere) of the
+    story-math fMRI contrast at the **network** level,
+  - average asymmetry of activations (left-right hemisphere) of the
+    story-math fMRI contrast at the **hub** level,
+  - average strength sum (left+right hemisphere) during rs-fMRI of the
+    language network,
+  - average strength asymmetry (left-right hemisphere) during rs-fMRI of
+    the language network,
+  - average inter-hemispheric homotopic connectivity strength during
+    rs-fMRI of the language network.
+- `step_5_participants_classification.R`: …
 
 The `Visualization` folder contains `R` files (`figures_script_FigX.R`)
 used to generate each figures included in the paper. Each script
@@ -75,7 +97,10 @@ have this, we are happy to share the processed data used here.
   [SENSAAS](https://github.com/loiclabache/SENSAAS_brainAtlas)). These 5
   features have been previously shown to accurately determine the
   language network lateralization at the individual level ([Labache, L.,
-  et al. 2020](https://doi.org/10.7554/eLife.58722)).
+  et al. 2020](https://doi.org/10.7554/eLife.58722)). The 5 language
+  lateralization metrics are availabe there:
+  `Data\995participants_language_metrics_HCP.csv` (participants
+  identifiers are anonymized).
 
 <p align="center">
 <img src="readme_files/method_summary.png" width="60%" height="60%" />
@@ -129,6 +154,10 @@ folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
     atlas (*i.e.* regions STS3, STS4 and F3t only) in the left
     (`S1200_binaryHubsSentCore_L_surface.shape.gii`) and right
     hemisphere (`S1200_binaryHubsSentCore_R_surface.shape.gii`).
+    - Briefly, the language network hubs atlas corresponded to the
+      inferior frontal gyrus (Broca’s area, F3t) and to the posterior
+      aspect of the superior temporal sulcus (corresponding to
+      Wernicke’s area, STS3 and STS4).
 
 <p align="center">
 <img src="readme_files/sensaas.gif" width="50%" height="50%" />
