@@ -51,7 +51,8 @@ compute language lateralization metrics and gradients, and analyze data.
   resting-state data for chosen participants. Requires to create AWS
   credentials through the
   [ConnectomeDB](https://wiki.humanconnectome.org/display/PublicData/How+To+Connect+to+Connectome+Data+via+AWS)
-  website.
+  website. Only the rs-BOLD time series from the language network
+  (SENT_CORE) are downloaded.
 - `step_2_download_task_fMRI_HCP_data.R`: `R` script to download
   language task data for chosen participants (*aka* files named
   *LANGUAGE_level2_hp200_s4.dscalar.nii* on HCP server). Requires to
@@ -63,8 +64,8 @@ compute language lateralization metrics and gradients, and analyze data.
   hemispheres. Requires
   [`Connectome Workbench`](https://www.humanconnectome.org/software/connectome-workbench).
 - `step_4_language_metrics_computation.R`: `R` script to compute the 5
-  language lateralization metrics (data available in the `Data` folder:
-  `995participants_language_metrics_HCP.csv`):
+  language lateralization metrics for each participant (data available
+  in the `Data` folder: `995participants_language_metrics_HCP.csv`):
   - **average asymmetry of activation** (left-right hemisphere) of the
     story-math fMRI contrast at the **network** level,
   - **average asymmetry of activation** (left-right hemisphere) of the
@@ -78,6 +79,19 @@ compute language lateralization metrics and gradients, and analyze data.
 - `step_5_participants_classification.R`: `R` script to classify the 995
   participants. Each participant is characterized by the 5 language
   lateralization metrics.
+- `step_6_whole_brain_fc_matrices.R`: `R` script to compute the whole
+  brain connectivity matrix (384 x 384, AICHA atlas) for each
+  participant.
+- `step_7_1_gradient_computation.py`: `Python` script to compute the
+  first 3 functional gradients as defined by ([Margulies, D., et
+  al. 2016](https://doi.org/10.1073/pnas.1608282113)), using the
+  `Python` library
+  [*BrainSpace*](https://brainspace.readthedocs.io/en/latest/pages/getting_started.html).
+  The script requires group level correlation matrix, available there:
+  `Data/groupLevel_correlationMatrix.txt`, and the group level gradient
+  values, available there:`Data/groupLevel_gradient.csv`.
+- `step_7_2_gradient_computation.R`: `R` script to create a compiled
+  file of all the gradient values for all participant.
 
 The `Visualization` folder contains `R` files (`figures_script_FigX.R`)
 used to generate each figures included in the paper. Each script
@@ -113,7 +127,8 @@ have this, we are happy to share the processed data used here.
   [AICHA](https://doi.org/10.1016/j.jneumeth.2015.07.013) brain
   regions). Those matrices have been used to compute the first 3
   functional gradients ([Margulies, D., et
-  al. 2016](https://doi.org/10.1073/pnas.1608282113)).
+  al. 2016](https://doi.org/10.1073/pnas.1608282113)). The individual
+  regional/network gradients values are available there: `Data/`.
 
 <p align="center">
 <img src="readme_files/gradients_summary.png" width="60%" height="60%" />
