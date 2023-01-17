@@ -91,7 +91,15 @@ compute language lateralization metrics and gradients, and analyze data.
   `Data/groupLevel_correlationMatrix.txt`, and the group level gradient
   values, available there:`Data/groupLevel_gradient.csv`.
 - `step_7_2_gradient_computation.R`: `R` script to create a compiled
-  file of all the gradient values for all participant.
+  file of all the gradient values for all participant. The normalized
+  gradients at the network level for each participant can be found
+  there: `Data/994participants_gradients_network.csv`. The
+  correspondence between the AICHA regions and the 7 networks from [Yeo,
+  B.T. T., et al. 2011](https://doi.org/10.1152/jn.00338.2011) can be
+  found there:
+  `Atlas/AICHA/overlap_AICHA_Yeo_7Network_maskYeo_SchaeferAtlas.csv`.
+
+overlap_AICHA_Yeo_7Network_maskYeo_SchaeferAtlas.csv
 
 The `Visualization` folder contains `R` files (`figures_script_FigX.R`)
 used to generate each figures included in the paper. Each script
@@ -128,7 +136,8 @@ have this, we are happy to share the processed data used here.
   regions). Those matrices have been used to compute the first 3
   functional gradients ([Margulies, D., et
   al. 2016](https://doi.org/10.1073/pnas.1608282113)). The individual
-  regional/network gradients values are available there: `Data/`.
+  normalized network gradient values are available there:
+  `Data/994participants_gradients_network.csv`.
 
 <p align="center">
 <img src="readme_files/gradients_summary.png" width="60%" height="60%" />
