@@ -43,25 +43,31 @@ organization.
 The `Script` folder contains 2 sub-folders: `Analysis` and
 `Visualization`.
 
-- `-.rtf`: README file containing information about -
+The `Analysis` folder contains the scripts to download resting-state and
+language task fMRI data (from the Amazon Web Services: AWS, S3 bucket),
+compute language lateralization metrics and gradients, and analyze data.
 
-- `-`: —
+- `step_1_download_rest_fMRI_HCP_data.R`: `R` script to download
+  resting-state data for chosen participants,
+- `step_2_download_task_fMRI_HCP_data.R`: `R` script to download
+  language task data for chosen participants (*aka* files named
+  *LANGUAGE_level2_hp200_s4.dscalar.nii* on HCP server),
+- `step_3_language_metrics_computation.R`: …
+- `-`: …
 
-- `-`: —
-
-- The `Visualization` folder contains `R` files
-  (`figures_script_FigX.R`) used to generate each figures included in
-  the paper. Each script corresponds to a figure or a panel. The brain
-  renderings in the paper require a customized version of [Surf
-  Ice](https://www.nitrc.org/projects/surfice/) that we will be happy to
-  share on demand.
+The `Visualization` folder contains `R` files (`figures_script_FigX.R`)
+used to generate each figures included in the paper. Each script
+corresponds to a figure or a panel. The brain renderings in the paper
+require a customized version of [Surf
+Ice](https://www.nitrc.org/projects/surfice/) that we will be happy to
+share on demand.
 
 ------------------------------------------------------------------------
 
 ## Data
 
 All the data used are brain fMRI data from the Human Connectome Project
-(HCP; n=995). The HCP data requires data access permission and if you
+(HCP; *n*=995). The HCP data requires data access permission and if you
 have this, we are happy to share the processed data used here.
 
 - The primary data used are the 5 functional features characterizing the
@@ -99,11 +105,15 @@ identifiers of each participant, but an exemple file to run the scripts.
 The atlas used in te paper are available in the `Atlas` folder. This
 folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
 
-- **SENSAAS** is composed of 18 regions of interest corresponding to the
-  **core language network**. The core language network corresponds to a
-  set of heteromodal brain regions *significantly involved, leftward
-  asymmetrical across 3 language contrasts* (listening to, reading, and
-  producing sentences), and intrinsically connected. Full description of
+- **SENSAAS** provide an atlas in standardized MNI volume space of 32
+  sentence-related areas based on a 3-step method combining the analysis
+  of *activation and asymmetry during multiple language tasks* with
+  hierarchical clustering of resting-state connectivity and graph
+  analyses. The temporal correlations at rest between these 32 regions
+  made it possible to detect their belonging to 3 networks. Among these
+  networks, one, *including 18 regions*, contains the essential language
+  areas (**SENT_CORE** network), *i.e.* those whose **lesion would cause
+  an alteration in the understanding of speech**. Full description of
   the language atlas can be found there:
   [SENSAAS](https://github.com/loiclabache/SENSAAS_brainAtlas), and the
   related paper there: [Labache, L., et
