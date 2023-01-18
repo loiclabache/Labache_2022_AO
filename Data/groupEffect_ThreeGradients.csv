@@ -1,0 +1,15 @@
+Effect,7 Networks - Yeo,Order,Stat,G1,G2,G3
+Cluster - MMHC binaire (category),Default,1,Prob. > |t|,5.720606e-10,0.000597147,9.083573e-31
+Cluster - MMHC binaire (category),Default,1,t ratio,-6.26035225,-3.444056373,11.934950639
+Cluster - MMHC binaire (category),Cont,2,Prob. > |t|,0.0000147886,0.0015806293,7.148632e-18
+Cluster - MMHC binaire (category),Cont,2,t ratio,-4.35359555,-3.168268955,8.7791642936
+Cluster - MMHC binaire (category),Limbic,3,Prob. > |t|,0.2028686798,0.2490729285,1.0122384e-6
+Cluster - MMHC binaire (category),Limbic,3,t ratio,-1.274267194,-1.153284282,4.9202567211
+Cluster - MMHC binaire (category),SalVentAttn,4,Prob. > |t|,3.8857961e-6,0.0059294926,0.0000518519
+Cluster - MMHC binaire (category),SalVentAttn,4,t ratio,-4.64363361,-2.757641438,4.0650040473
+Cluster - MMHC binaire (category),DorsAttn,5,Prob. > |t|,0.0000634308,0.5605611496,0.0074756798
+Cluster - MMHC binaire (category),DorsAttn,5,t ratio,-4.016955982,-0.582205622,2.6804123372
+Cluster - MMHC binaire (category),SomMot,6,Prob. > |t|,0.9122030636,0.1178865655,0.2156330242
+Cluster - MMHC binaire (category),SomMot,6,t ratio,-0.110288417,1.5650720218,1.2390189904
+Cluster - MMHC binaire (category),Vis,7,Prob. > |t|,0.0021992118,0.1228804762,0.0738200597
+Cluster - MMHC binaire (category),Vis,7,t ratio,-3.06998759,1.5441172564,1.7896290473
