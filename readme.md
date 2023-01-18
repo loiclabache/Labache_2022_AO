@@ -99,10 +99,10 @@ compute language lateralization metrics and gradients, and analyze data.
   found there:
   `Atlas/AICHA/overlap_AICHA_Yeo_7Network_maskYeo_SchaeferAtlas.csv`.
 
-The `Visualization` folder contains `R` files (`figures_script_FigX.R`)
-used to generate each figures included in the paper. Each script
-corresponds to a figure or a panel. The brain renderings in the paper
-require a customized version of [Surf
+The `Visualization` folder contains `R` files (`FigX_script.R`) used to
+generate each figures included in the paper. Each script corresponds to
+a figure or a panel. The brain renderings in the paper require a
+customized version of [Surf
 Ice](https://www.nitrc.org/projects/surfice/) that we will be happy to
 share on demand.
 
