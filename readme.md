@@ -65,7 +65,7 @@ compute language lateralization metrics and gradients, and analyze data.
   [`Connectome Workbench`](https://www.humanconnectome.org/software/connectome-workbench).
 - `step_4_language_metrics_computation.R`: `R` script to compute the 5
   language lateralization metrics for each participant (data available
-  in the `Data` folder: `995participants_language_metrics_HCP.csv`):
+  in the `Data` folder: `995participants_language_metrics_HCP.xlsx`):
   - **average asymmetry of activation** (left-right hemisphere) of the
     story-math fMRI contrast at the **network** level,
   - **average asymmetry of activation** (left-right hemisphere) of the
@@ -93,7 +93,7 @@ compute language lateralization metrics and gradients, and analyze data.
 - `step_7_2_gradient_computation.R`: `R` script to create a compiled
   file of all the gradient values for all participant. The normalized
   gradients at the network level for each participant can be found
-  there: `Data/994participants_gradients_network.csv`. The
+  there: `Data/994participants_gradients_network.xlsx`. The
   correspondence between the AICHA regions and the 7 networks from [Yeo,
   B.T. T., et al. 2011](https://doi.org/10.1152/jn.00338.2011) can be
   found there:
@@ -123,7 +123,7 @@ have this, we are happy to share the processed data used here.
   language network lateralization at the individual level ([Labache, L.,
   et al. 2020](https://doi.org/10.7554/eLife.58722)). The 5 language
   lateralization metrics are availabe there:
-  `Data\995participants_language_metrics_HCP.csv` (participants
+  `Data\995participants_language_metrics_HCP.xlsx` (participants
   identifiers are anonymized).
 
 <p align="center">
@@ -137,7 +137,7 @@ have this, we are happy to share the processed data used here.
   functional gradients ([Margulies, D., et
   al. 2016](https://doi.org/10.1073/pnas.1608282113)). The individual
   normalized network gradient values are available there:
-  `Data/994participants_gradients_network.csv`.
+  `Data/994participants_gradients_network.xlsx`.
 
 <p align="center">
 <img src="readme_files/gradients_summary.png" width="60%" height="60%" />
@@ -180,7 +180,7 @@ folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
     atlas (*i.e.* regions STS3, STS4 and F3t only) in the left
     (`S1200_binaryHubsSentCore_L_surface.shape.gii`) and right
     hemisphere (`S1200_binaryHubsSentCore_R_surface.shape.gii`).
-    - Briefly, the language network hubs atlas corresponded to the
+    - Briefly, the hub language network atlas corresponded to the
       inferior frontal gyrus (Broca’s area, F3t) and to the posterior
       aspect of the superior temporal sulcus (corresponding to
       Wernicke’s area, STS3 and STS4).
