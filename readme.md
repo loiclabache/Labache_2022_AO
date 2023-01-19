@@ -98,11 +98,10 @@ compute language lateralization metrics and gradients, and analyze data.
   B.T. T., et al. 2011](https://doi.org/10.1152/jn.00338.2011) can be
   found there:
   `Atlas/AICHA/overlap_AICHA_Yeo_7Network_maskYeo_SchaeferAtlas.csv`.
-- `step_8_ancova_analysis_gradients.R`: `R` script …
-- `step_9_1_prepare_data_for_heritability_analysis.R`: `R` script to
+- `step_8_1_prepare_data_for_heritability_analysis.R`: `R` script to
   create an compatible csv file for `Solar`, a software allowing to
   perform heritability analysis.
-- `step_9_2_heritability_gradient_network.R`: `R` script to perform the
+- `step_8_2_heritability_gradient_network.R`: `R` script to perform the
   heritability analysis.
 
 The `Visualization` folder contains `R` files (`FigX_script.R`) used to
