@@ -38,7 +38,7 @@ organization.
 
 ------------------------------------------------------------------------
 
-## Code release (*in progress*)
+## Code release
 
 The `Script` folder contains 2 sub-folders: `Analysis` and
 `Visualization`.
