@@ -2,12 +2,22 @@ Language network lateralization is reflected throughout the macroscale
 functional organization of cortex
 ================
 
-## Reference
+[![DOI](https://zenodo.org/badge/589013041.svg)](https://zenodo.org/badge/latestdoi/589013041)
+![GitHub all
+releases](https://img.shields.io/github/downloads/loiclabache/Labache_2022_AO/total)
 
-**Labache, L.**, Ge, T., Yeo, B.T. T., Holmes, A. J. (2022). Atypical
-language network lateralization is reflected throughout the macroscale
-functional organization of cortex. bioRxiv. DOI:
-[10.1101/2022.12.14.520417](https://doi.org/10.1101/2022.12.14.520417)
+------------------------------------------------------------------------
+
+## Contents
+
+- [Background](#background)
+- [Code Release](#code-release)
+- [Data](#data)
+- [Atlas Used](#atlas-used)
+- [Reference](#reference)
+- [Other related papers that might interest
+  you](#other-related-papers-that-might-interest-you)
+- [Questions](#questions)
 
 ------------------------------------------------------------------------
 
@@ -22,10 +32,10 @@ substantial minority of the population shows reverse lateralization.
 Using twin and family data from the Human Connectome Project, we provide
 evidence that atypical **language dominance is associated with global
 shifts in cortical organization**. Individuals with atypical language
-organization exhibited corresponding hemispheric differences in the
+organization exhibit corresponding hemispheric differences in the
 macroscale functional gradients that situate discrete large-scale
 networks along a continuous spectrum, extending from unimodal through
-association territories. Analyses revealed that both language
+association territories. Analyses reveal that both language
 lateralization and gradient asymmetries are, in part, driven by genetic
 factors. These findings pave the way for a deeper understanding of the
 origins and relationships linking population-level variability in
@@ -38,7 +48,7 @@ organization.
 
 ------------------------------------------------------------------------
 
-## Code release
+## Code Release
 
 The `Script` folder contains 2 sub-folders: `Analysis` and
 `Visualization`.
@@ -154,7 +164,7 @@ identifiers of each participant, but an exemple file to run the scripts.
 
 ------------------------------------------------------------------------
 
-## Atlas used
+## Atlas Used
 
 The atlas used in te paper are available in the `Atlas` folder. This
 folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
@@ -205,6 +215,24 @@ folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
     `Atlas\AICHA` folder: `AICHA.nii` (MNI ICBM 152 space).
     `AICHA_vol3.txt` is a description of each atlas’ regions.
     `Readme_AICHA.pdf` is the user manual.
+
+------------------------------------------------------------------------
+
+## Reference
+
+For usage of the ***manuscript***, please cite:
+
+- **Labache, L.**, Ge, T., Yeo, B.T. T., Holmes, A. J. (2023). Language
+  network lateralization is reflected throughout the macroscale
+  functional organization of cortex. bioRxiv. DOI:
+  [10.1101/2022.12.14.520417](https://doi.org/10.1101/2022.12.14.520417)
+
+For usage of the associated ***code***, please also cite:
+
+- **Labache, L.**, Ge, T., Yeo, B.T. T., Holmes, A. J. (2023). Language
+  network lateralization is reflected throughout the macroscale
+  functional organization of cortex. loiclabache/Labache_2022_AO. DOI:
+  [10.5281/zenodo.7869040](https://doi.org/10.5281/zenodo.7869040)
 
 ------------------------------------------------------------------------
 
