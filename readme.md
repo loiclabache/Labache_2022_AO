@@ -3,8 +3,7 @@ functional organization of cortex
 ================
 
 [![DOI](https://zenodo.org/badge/589013041.svg)](https://zenodo.org/badge/latestdoi/589013041)
-![GitHub all
-releases](https://img.shields.io/github/downloads/loiclabache/Labache_2022_AO/total)
+<!-- ![GitHub all releases](https://img.shields.io/github/downloads/loiclabache/Labache_2022_AO/total) -->
 
 ------------------------------------------------------------------------
 
