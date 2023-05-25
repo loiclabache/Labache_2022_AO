@@ -161,6 +161,9 @@ All data computed in the paper and to generate figures are provided in
 The file `Data\infos_995participants.csv` does not correspond to the HCP
 identifiers of each participant, but an exemple file to run the scripts.
 
+The data to reproduce Figure 1C, 3A, 3B, and 3C are available in the
+excel file `Data/Source Data.xlsx`.
+
 ------------------------------------------------------------------------
 
 ## Atlas Used
