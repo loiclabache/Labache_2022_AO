@@ -224,10 +224,10 @@ folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
 
 For usage of the ***manuscript***, please cite:
 
-- **Labache, L.**, Ge, T., Yeo, B.T. T., Holmes, A. J. (2023). Language
-  network lateralization is reflected throughout the macroscale
-  functional organization of cortex. bioRxiv. DOI:
-  [10.1101/2022.12.14.520417](https://doi.org/10.1101/2022.12.14.520417)
+- **Labache, L.**, Ge, T., Yeo, B.T.T. et al. Language network
+  lateralization is reflected throughout the macroscale functional
+  organization of cortex. Nat Commun 14, 3405 (2023). DOI:
+  [10.1038/s41467-023-39131-y](https://doi.org/10.1038/s41467-023-39131-y)
 
 For usage of the associated ***code***, please also cite:
 
