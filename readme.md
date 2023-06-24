@@ -10,10 +10,10 @@ functional organization of cortex
 ## Contents
 
 - [Background](#background)
+- [Reference](#reference)
 - [Code Release](#code-release)
 - [Data](#data)
 - [Atlas Used](#atlas-used)
-- [Reference](#reference)
 - [Other related papers that might interest
   you](#other-related-papers-that-might-interest-you)
 - [Questions](#questions)
@@ -44,6 +44,24 @@ organization.
 <p align="center">
 <img src="readme_files/gradient_effect.png" width="75%" height="75%" />
 </p>
+
+------------------------------------------------------------------------
+
+## Reference
+
+For usage of the ***manuscript***, please cite:
+
+- **Labache, L.**, Ge, T., Yeo, B.T.T. et al. Language network
+  lateralization is reflected throughout the macroscale functional
+  organization of cortex. Nat Commun 14, 3405 (2023). DOI:
+  [10.1038/s41467-023-39131-y](https://doi.org/10.1038/s41467-023-39131-y)
+
+For usage of the associated ***code***, please also cite:
+
+- **Labache, L.**, Ge, T., Yeo, B.T. T., Holmes, A. J. (2023). Language
+  network lateralization is reflected throughout the macroscale
+  functional organization of cortex. loiclabache/Labache_2022_AO. DOI:
+  [10.5281/zenodo.7869040](https://doi.org/10.5281/zenodo.7869040)
 
 ------------------------------------------------------------------------
 
@@ -217,24 +235,6 @@ folder contains 2 sub-folders: `SENSAAS` and `AICHA`.
     `Atlas\AICHA` folder: `AICHA.nii` (MNI ICBM 152 space).
     `AICHA_vol3.txt` is a description of each atlas’ regions.
     `Readme_AICHA.pdf` is the user manual.
-
-------------------------------------------------------------------------
-
-## Reference
-
-For usage of the ***manuscript***, please cite:
-
-- **Labache, L.**, Ge, T., Yeo, B.T.T. et al. Language network
-  lateralization is reflected throughout the macroscale functional
-  organization of cortex. Nat Commun 14, 3405 (2023). DOI:
-  [10.1038/s41467-023-39131-y](https://doi.org/10.1038/s41467-023-39131-y)
-
-For usage of the associated ***code***, please also cite:
-
-- **Labache, L.**, Ge, T., Yeo, B.T. T., Holmes, A. J. (2023). Language
-  network lateralization is reflected throughout the macroscale
-  functional organization of cortex. loiclabache/Labache_2022_AO. DOI:
-  [10.5281/zenodo.7869040](https://doi.org/10.5281/zenodo.7869040)
 
 ------------------------------------------------------------------------
 
